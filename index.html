@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedomain24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <button id="menuBtn">
+            <!-- دمج SVG داخل HTML -->
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                <path d="M3 6h18M3 12h18M3 18h18"></path>
+            </svg>
+        </button>
+        <span>Freedomain24</span>
+        <button id="loginBtn">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                <path d="M12 2v20M5 12h14"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- شريط البحث -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="ابحث عن الدومين">
+        <button onclick="searchDomain()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                <circle cx="10" cy="10" r="8"></circle>
+                <line x1="15" y1="15" x2="20" y2="20"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- سياسة الخصوصية -->
+    <section class="privacy-policy">
+        <h1>سياسة الخصوصية</h1>
+        <p>نحن نقدم خدمات نطاقات مجانية ونحن لا نجمع بيانات إلا: البريد الإلكتروني من Google واسم الشخصي.</p>
+    </section>
+
+    <!-- حماية الخصوصية -->
+    <section class="privacy-protection">
+        <h2>حماية الخصوصية</h2>
+        <p>نحن نحمى الملكية الفكرية للشركات فلذلك نحن لا نسمح بالحصول على اسم علامة تجارية.</p>
+    </section>
+
+    <!-- عن الموقع -->
+    <section class="about-site">
+        <h2>عن الموقع</h2>
+        <p>نحن نقدم نطاقات مجانية مثل .ml .tk .cf وغيرها.</p>
+    </section>
+
+    <!-- تسجيل الدخول -->
+    <section class="login-section">
+        <h2>تسجيل الدخول / إنشاء حساب</h2>
+        <form id="loginForm">
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" name="password" placeholder="كلمة المرور" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
